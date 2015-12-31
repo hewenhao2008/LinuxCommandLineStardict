@@ -5,7 +5,7 @@
  * And You can use it free
  * Interest only
  *
- * Author: http://www.redlinux.org and 
+ * WebSite: http://www.redlinux.org
  * Date: 20151231
  *
  */
