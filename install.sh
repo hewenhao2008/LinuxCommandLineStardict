@@ -49,7 +49,4 @@ __DOC__
 
 fi
 
-#Use new ~/.bashrc
-source ~/.bashrc
-
 echo "Install successfully..."
