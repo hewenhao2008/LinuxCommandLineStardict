@@ -21,7 +21,9 @@ Date: 20151231
 
 Install:
 
-    ./install.sh
+    $ ./install.sh
+
+    $ source ~/.bashrc
 
 使用
 
