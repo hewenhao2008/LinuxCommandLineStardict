@@ -50,6 +50,9 @@ Download dicts:
 安装词典:
 Install Dicts:
   $  tar xvf a-2.4.2.tar.bz2 
+
   $  cd a-2.4.2/
+
   $ 7z  x  a.dict.dz 
+
   $ cp -pfr a.dict a.idx a.ifo  $STARDICT_HOME/dicts/
