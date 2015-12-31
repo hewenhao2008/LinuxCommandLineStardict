@@ -38,8 +38,9 @@ chmod +x stardict.exe
 #if create $STARDICT_HOME successfully to copy the files and configure it
 if [ -d "$STARDICT_HOME" ]
 then
-
-    cp -pfr dicts  INSTALL  stardict s stardict.c  stardict.exe  $STARDICT_HOME/
+    [ ! -d dicts ] && mkdir dicts
+    ln -s stardict s
+    cp -pfr dicts  README.md  stardict s stardict.c  stardict.exe  $STARDICT_HOME/
 
 cat >> ~/.bashrc <<__DOC__
     export STARDICT_HOME=$STARDICT_HOME
