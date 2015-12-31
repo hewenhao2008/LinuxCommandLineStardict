@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]
+then	
+   echo "Usage: $0 word"
+   exit 1
+fi
+
+cd $STARDICT_HOME
+stardict.exe $1 | more
