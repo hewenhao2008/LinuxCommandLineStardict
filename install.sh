@@ -12,7 +12,7 @@ then
 fi
 
 #check gcc
-which gcc
+which gcc 2>&1 >/dev/null
 if [ $? -ne 0 ]
 then
     echo "Please install gcc"
@@ -20,7 +20,7 @@ then
 fi
 
 #compile
-gcc -o stardict.exe src/stardict.c 
+gcc -v -o stardict.exe src/stardict.c 
 
 if [ $? -ne 0 ]
 then
