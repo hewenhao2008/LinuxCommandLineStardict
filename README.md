@@ -1,65 +1,30 @@
-命令行stardict
+有声命令行stardict电子词典
+sounds dictionary
 
-(Command line Stardict which can search words from many dicts)
-
-部分源码来处网络，大家可以自由使用
-
-(Some of the codes  are from the internet , And You can use it free)
-
-仅为学习之用
-
-(It is only for study to me.)
-
-本人网站
-
-(my website: http://www.redlinux.org)
-
-日期
-Date: 20151231
-
-安装
+[ from internet for the internet (http://www.redlinux.org) ]
 
 Install:
 
-    $ ./install.sh
+       $ ./install.sh
+ 
+       $ source ~/.bashrc
 
-    $ source ~/.bashrc
+ Ubuntu$ sudo apt-get install espeak espeak-data
 
-使用
+ CentOS$ sudo yum install espeak espeak-data
+
 
 Usage: 
 
-[user@localhost ~]$ s dictionary
-
-[Dict: cdict-gb.dict]
-
-[ˋdIkʃәnˏєrI;ˊdikʃәnri,-ʃәnәri]
-
-<<名词>>
-
-字典, 辞典
-
-[Dict: oxford-gb-formated.dict]
-
-/ˈdɪkʃənrɪ;   [US]    -nerɪ; `dɪkʃəˌnɛrɪ/
-n
-(a) book that lists and explain, and is usu arranged in 
-alphabetical order 字典; 词典
-*an English dictionary 英语词典.
+   Normal Search Words:
+  
+   [user@localhost ~]$ s dictionary
 
 
-[备注]
+   Speak word with espeak:
 
-[Comment]
+   [user@localhost ~]$ s -s dictionary
 
-  dicts/a.dict (新下下来的词典为 a.dict.dz,  请使用 7z x a.dict.dz)
-
-  dicts/a.idx
-
-  dicts/a.ifo
-
-
-词典下载: 
 
 Download dicts: 
 
@@ -67,8 +32,6 @@ Download dicts:
 
   http://download.huzheng.org/zh_CN/
 
-
-安装词典:
 
 Install Dicts:
 
