@@ -3,7 +3,7 @@ sounds dictionary
 
 [ from internet for the internet (http://www.redlinux.org) ]
 
-###################################
+====================================
 
 Install:
 
@@ -15,7 +15,7 @@ Install:
 
  CentOS$ sudo yum install espeak espeak-data
 
-###################################
+====================================
 
 Usage: 
 
@@ -29,7 +29,7 @@ Usage:
    [user@localhost ~]$ s -s dictionary
 
 
-###################################
+====================================
 
 Download dicts: 
 
