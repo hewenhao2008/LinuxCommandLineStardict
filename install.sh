@@ -20,7 +20,7 @@ then
 fi
 
 #compile
-gcc -v -o stardict.exe src/stardict.c 
+gcc -o stardict.exe src/stardict.c 
 
 if [ $? -ne 0 ]
 then
