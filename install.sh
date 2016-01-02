@@ -12,7 +12,7 @@ then
 fi
 
 #check gcc
-which gcc 2>&1 >/dev/null
+which gcc >/dev/null 2>&1 
 if [ $? -ne 0 ]
 then
     echo "Please install gcc"
