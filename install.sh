@@ -40,7 +40,7 @@ if [ -d "$STARDICT_HOME" ]
 then
     [ ! -d dicts ] && mkdir dicts
     ln -s stardict s
-    cp -pfr dicts  README.md  stardict s stardict.c  stardict.exe  $STARDICT_HOME/
+    cp -pfr dicts  README.md  stardict s  stardict.exe  $STARDICT_HOME/
 
 cat >> ~/.bashrc <<__DOC__
     export STARDICT_HOME=$STARDICT_HOME
