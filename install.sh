@@ -43,8 +43,10 @@ then
     cp -pfr dicts  README.md  stardict s  stardict.exe  $STARDICT_HOME/
 
 cat >> ~/.bashrc <<__DOC__
-    export STARDICT_HOME=$STARDICT_HOME
-    export PATH=\$PATH:\$STARDICT_HOME
+export STARDICT_HOME=$STARDICT_HOME
+export PATH=\$PATH:\$STARDICT_HOME
+alias sp="s -s "
+alias sv="s -v "
 __DOC__
 
 fi
