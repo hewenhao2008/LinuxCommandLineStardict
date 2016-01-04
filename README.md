@@ -26,7 +26,13 @@ Usage:
 
    Speak word with espeak:
 
-   [user@localhost ~]$ s -s dictionary
+   [user@localhost ~]$ sp dictionary
+
+
+   Only Speak word:
+
+
+   [user@localhost ~]$ sv dictionary
 
 
 ====================================
