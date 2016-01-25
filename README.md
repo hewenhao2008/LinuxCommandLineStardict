@@ -24,7 +24,7 @@ Usage:
    [user@localhost ~]$ s dictionary
 
 
-   Speak word with espeak:
+   Speak and search word with espeak:
 
    [user@localhost ~]$ sp dictionary
 
