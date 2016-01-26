@@ -33,7 +33,10 @@ chmod +x stardict.exe
 
 
 #create $STARDICT_HOME
-[ ! -d "$STARDICT_HOME" ] && mkdir -p "$STARDICT_HOME"
+if [ ! -d "$STARDICT_HOME" ] 
+then
+    mkdir -p "$STARDICT_HOME" || exit 3
+fi
 
 #if create $STARDICT_HOME successfully to copy the files and configure it
 if [ -d "$STARDICT_HOME" ]
@@ -49,6 +52,6 @@ alias sp="s -s "
 alias sv="s -v "
 __DOC__
 
+echo "Install successfully..."
 fi
 
-echo "Install successfully..."
