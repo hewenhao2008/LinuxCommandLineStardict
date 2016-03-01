@@ -12,21 +12,32 @@ fi
 
 cd $STARDICT_HOME
 
-if [ "$1" == "-s" ]
+#only speak
+if [ "$1" == "-v" ]
 then
-    which espeak >/dev/null 2>&1  && espeak -s 130 -ven+f3 "$2" &
-
-    stardict.exe "$2" | more
-elif [ "$1" == "-v" ]
-then
-    which espeak >/dev/null 2>&1 
+    which mplayer >/dev/null 2>&1 
     if [ $? -eq 0 ]
     then
-        espeak -s 130 -ven+f3 "$2" &
+        url="http://v2.redlinux.org/t2v.aspx?t=mp3&l=cn&s="${2// /%20}
+        mplayer "$url" >/dev/null  2>&1
     else
-        echo "Install espeak please"
+        echo "Install mplayer please"
     fi
+
+#speak and look for
+elif [ "$1" == "-s" ]
+then
+    which mplayer >/dev/null 2>&1 
+    if [ $? -eq 0 ]
+    then
+        url="http://v2.redlinux.org/t2v.aspx?t=mp3&l=cn&s="${2// /%20}
+        mplayer "$url" >/dev/null  2>&1
+    else
+        echo "Install mplayer please"
+    fi
+    stardict.exe "$2" | more
+
+#only look for
 else
     stardict.exe "$1" | more
 fi
-
