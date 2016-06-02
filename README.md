@@ -1,3 +1,4 @@
+<pre>
 有声命令行stardict电子词典
 sounds dictionary
 
@@ -53,3 +54,4 @@ Install Dicts:
   $ 7z  x  a.dict.dz 
 
   $ cp -pfr a.dict a.idx a.ifo  $STARDICT_HOME/dicts/
+</pre>
